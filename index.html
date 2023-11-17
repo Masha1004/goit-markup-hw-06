@@ -36,6 +36,11 @@
             <li><a class="item-link link" href="">Contacts</a></li>
           </ul>
         </nav>
+        <button class="mobile-open-btn" type="button">
+          <svg class="mobile-open-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="contact-link add-box">
           <ul class="list menu">
             <li class="address-list">
@@ -59,6 +64,7 @@
           <button class="btn" type="button">Order Service</button>
         </div>
       </section>
+      <!-- Section 2 -->
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">main qualities</h2>
@@ -69,7 +75,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Strategy</h3>
+              <h3 class="subtitle subtitle-mb">Strategy</h3>
               <p class="qualities-txt">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -81,7 +87,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Punctuality</h3>
+              <h3 class="subtitle subtitle-mb">Punctuality</h3>
               <p class="qualities-txt">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -93,7 +99,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Diligence</h3>
+              <h3 class="subtitle subtitle-mb">Diligence</h3>
               <p class="qualities-txt">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -105,7 +111,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Technologies</h3>
+              <h3 class="subtitle subtitle-mb">Technologies</h3>
               <p class="qualities-txt">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -122,6 +128,7 @@
             <li class="team-img">
               <img
                 class="img-box"
+                srcset="./images/mark@2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="Marc foto"
                 width="264"
@@ -164,6 +171,7 @@
             <li class="team-img">
               <img
                 class="img-box"
+                srcset="./images/tom@2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Tom foto"
                 width="264"
@@ -206,6 +214,7 @@
             <li class="team-img">
               <img
                 class="img-box"
+                srcset="./images/camila@2x.jpg 2x"
                 src="./images/camila.jpg"
                 alt="Camila foto"
                 width="264"
@@ -248,6 +257,7 @@
             <li class="team-img">
               <img
                 class="img-box"
+                srcset="./images/daniel@2x.jpg 2x"
                 src="./images/danial.jpg"
                 alt="Daniel foto"
                 width="264"
@@ -299,6 +309,8 @@
               <div class="overlay-wrapper">
                 <img
                   class="img-box"
+                  srcset="./images/retina-w/img-banking.jpg 288w"
+                  sizes="(max-width: 767px) 288px"
                   src="./images/bankingapp.jpg"
                   alt="Banking App"
                   width="360"
@@ -424,7 +436,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-block">
+    <!-- <footer class="footer-block">
       <div class="footer-box container">
         <div class="footer-left">
           <a class="logo-link link logotype-footer" href="./index.html"
@@ -491,8 +503,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-open">
+    </footer> -->
+    <!-- <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg
@@ -612,6 +624,65 @@
           </div>
           <button class="review-form-btn button" type="submit">Send</button>
         </form>
+      </div>
+    </div> -->
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu is-open">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg class="mobile-menu-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mb-menu-link list">
+            <li>
+              <a class="item-link link current" href="./index.html">Studio</a>
+            </li>
+            <li><a class="item-link link" href="">Portfolio</a></li>
+            <li><a class="item-link link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="add-box">
+          <ul class="mb-menu-address list">
+            <li class="mb-menu-tel">
+              <a href="tel:+110001111111"></a>+11 (000) 111-11-11
+            </li>
+            <li class="mb-menu-mail">
+              <a href="mailto:info@devstudio.com"></a>info@devstudio.com
+            </li>
+          </ul>
+        </address>
+        <ul class="mb-menu-icon list">
+          <li>
+            <a href="" class="social-list-link">
+              <svg class="social-list-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-list-link">
+              <svg class="social-list-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-list-link">
+              <svg class="social-list-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-list-link">
+              <svg class="social-list-item" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>

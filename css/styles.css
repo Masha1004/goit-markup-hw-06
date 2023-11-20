@@ -18,6 +18,7 @@ li {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .list {
@@ -38,9 +39,9 @@ body {
 }
 
 .container {
-  /* max-width: 320px; */
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
@@ -77,7 +78,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 56px;
 }
 
 .logo-link {
@@ -186,8 +186,6 @@ body {
 }
 
 .add-box {
-  /* display: flex;
-  flex-direction: column; */
   margin-top: 168px;
 }
 
@@ -235,15 +233,15 @@ body {
 
 /* Section mobile 1 hero */
 .section-one {
-  padding: 72px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/bg.jpg/mobile-people-office.jpg);
-  /* max-width: 320px; */
   height: 432px;
-  /* margin: 0 auto; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -329,14 +327,9 @@ body {
 }
 
 .qualities-txt {
-  /* width: 288px;
-  height: 72px;
-  font-family: Roboto;
-  font-size: 16px; */
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02px;
-  /* color: #434455; */
 }
 
 .p-flex {
@@ -371,12 +364,6 @@ body {
   background: #ffffff;
 }
 
-/* .img-box {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
-
 .card-box-team {
   padding: 32px 0px;
 }
@@ -399,16 +386,11 @@ body {
 /* /Section mobile 3 */
 
 /* Section mobile 4 */
-/* .portfolio-flex {
-  display: flex;
-  flex-direction: column;
-} */
 
 .list-box-portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* flex-wrap: wrap; */
   gap: 48px;
 }
 
@@ -429,13 +411,6 @@ body {
   border-bottom: 1px solid #e7e9fc;
 }
 
-/* .qualities-txt {
-  height: 24px;
-  line-height: 1.5;
-  font-style: normal;
-  letter-spacing: 0.02em;
-  color: #434455;
-} */
 /* /Section mobile 4 */
 
 /* Footer mobile */
@@ -464,7 +439,6 @@ body {
 }
 
 .logotype-footer {
-  /* display: inline-block; */
   margin-bottom: 17.5px;
 }
 
@@ -479,13 +453,7 @@ body {
 }
 
 .footer-text {
-  /* width: 288px; */
-  /* height: 72px; */
-  /* padding-left: 16px; */
   margin-bottom: 72px;
-  /* font-family: 'Roboto', sans-serif; */
-  /* font-size: 16px;
-  font-weight: 400; */
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
@@ -598,6 +566,7 @@ body {
 /* /Footer mobile */
 
 /* Backdrop mobile */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -653,7 +622,6 @@ body {
 }
 
 .leav-form-back {
-  /* width: 256px; */
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -798,7 +766,6 @@ body {
 
   .modal {
     width: 288px;
-    /* height: 623px; */
   }
 }
 
@@ -806,8 +773,10 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 796px;
-    margin: 0 auto;
   }
 
   .modal {
@@ -824,7 +793,6 @@ body {
   }
 
   .contact-link {
-    /*display: block;*/
   }
 
   .add-box {
@@ -833,9 +801,14 @@ body {
     margin-top: 0;
   }
 
+  .header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .menu {
     display: flex;
-    /*flex-direction: column;*/
     gap: 40px;
     flex-basis: calc(261-2 * 40 / 3);
   }
@@ -868,7 +841,6 @@ body {
 
   .strip::after {
     position: absolute;
-    /* width: 48px; */
     height: 4px;
     top: 50px;
     right: 0px;
@@ -888,7 +860,7 @@ body {
 
   .list-box-portfolio {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 356px);
     grid-column-gap: 24px;
     grid-row-gap: 72px;
   }
@@ -908,10 +880,7 @@ body {
     max-width: 348px;
   }
 
-  /* .team-img {width: 264px;} */
-
   .section-one {
-    height: 436px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -991,8 +960,6 @@ body {
     max-width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 15px;
-  padding-right: 15px; */
   }
 
   .page-header {
@@ -1003,11 +970,6 @@ body {
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
       0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     color: #e7e9fc;
-  }
-
-  .header-flex {
-    display: flex;
-    justify-content: space-between;
   }
 
   .page-navigation {
@@ -1108,13 +1070,12 @@ body {
   }
 
   .section-one {
-    padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/bg.jpg/people-office.jpg);
-    max-width: 1440px;
+    min-height: 600px;
     margin: 0 auto;
     background-position: center;
     background-size: cover;
@@ -1125,7 +1086,6 @@ body {
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
     .section-one {
-      padding: 188px 0;
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -1158,15 +1118,6 @@ body {
     margin-left: auto;
     text-align: center;
   }
-
-  /* .hero {
-    max-width: 1440px;
-    height: 600px;
-    padding-bottom: 48px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-  } */
 
   .btn {
     font-size: 16px;
@@ -1320,6 +1271,12 @@ body {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .item-portfolio:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
+
   .overlay-wrapper {
     position: relative;
     overflow: hidden;
@@ -1327,6 +1284,7 @@ body {
   }
 
   .text-overlay {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -1338,6 +1296,10 @@ body {
     background: #4d5ae5;
     border: 1px solid #f4f4fd;
     color: #f4f4fd;
+  }
+
+  .item-portfolio:hover .text-overlay {
+    transform: translateY(0%);
   }
 
   .p-overlay {
@@ -1355,7 +1317,6 @@ body {
   }
 
   .footer-block {
-    max-width: 1440px;
     margin: 0 auto;
     background: #2e2f42;
   }
@@ -1365,7 +1326,6 @@ body {
     flex-direction: row;
     align-items: baseline;
     height: 312px;
-    /* margin-left: 156px; */
     padding: 100px 0;
   }
 
@@ -1549,6 +1509,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
+    height: 584px;
     padding: 72px 24px 24px 24px;
     min-height: 584px;
     border-radius: 4px;
